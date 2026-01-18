@@ -6,6 +6,38 @@
     <title>Viola Practice Companion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+    <script>
+(function () {
+    const STORAGE_KEY = "viola_homework_state";
+    const DATE_KEY = "viola_homework_date";
+
+    const today = new Date().toLocaleDateString();
+    const savedDate = localStorage.getItem(DATE_KEY);
+
+    // Reset checklist if new day
+    if (savedDate !== today) {
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.setItem(DATE_KEY, today);
+    }
+
+    const savedState = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+
+    document.querySelectorAll("#homework-list li").forEach(item => {
+        const id = item.dataset.id;
+        const checkbox = item.querySelector("input[type='checkbox']");
+
+        // Restore checked state
+        checkbox.checked = !!savedState[id];
+
+        checkbox.addEventListener("change", () => {
+            savedState[id] = checkbox.checked;
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(savedState));
+        });
+    });
+})();
+</script>
+    
 <body>
 
 <header class="hero">
@@ -110,6 +142,7 @@
     
 </body>
 </html>
+
 
 
 

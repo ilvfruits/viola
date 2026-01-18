@@ -75,7 +75,6 @@ audio {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-
 .item {
     font-weight: 600;
     flex-basis: 100%;
@@ -86,9 +85,5 @@ audio {
     font-size: 0.9rem;
 }
 
-.count {
-    margin-left: auto;
-    font-weight: bold;
-    color: #333;
-}
+
 

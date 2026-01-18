@@ -102,6 +102,24 @@ audio {
     color: #777;
 }
 
+.reset-btn {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #f3f3f3;
+}
+
+.reset-btn:active {
+    transform: scale(0.98);
+}
+
 
 
 

@@ -28,6 +28,7 @@ li {
 audio {
     width: 100%;
     max-width: 100%;
+    height: 44px;
 }
 
 .track {
@@ -91,13 +92,23 @@ audio {
     gap: 8px;
     width: 100%;
     cursor: pointer;
+    padding: 6px 0;
 }
 
 .practice-list input[type="checkbox"] {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    margin-right: 10px;
 }
+
 
 .practice-list input[type="checkbox"]:checked + .item {
     text-decoration: line-through;
     color: #777;
 }
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.05rem;
+    }
+}
+

@@ -35,3 +35,50 @@ audio {
     padding: 12px;
     border-radius: 10px;
 }
+
+.hero {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.homework h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.practice-list {
+    list-style: none;
+    padding: 0;
+}
+
+.practice-list li {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.item {
+    font-weight: 600;
+    flex-basis: 100%;
+}
+
+.details {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.count {
+    margin-left: auto;
+    font-weight: bold;
+    color: #333;
+}

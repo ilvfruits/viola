@@ -82,7 +82,7 @@ audio {
 
 .details {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .practice-list label {
@@ -101,6 +101,7 @@ audio {
     text-decoration: line-through;
     color: #777;
 }
+
 
 
 
